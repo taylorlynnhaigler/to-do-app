@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>To-Do App</title>
   </head>
-  <body class= "demo-card-wide mdl-card mdl-shadow--2dp">
-    <header class="mdl-layout__header">
-      <h1>To-Do</h1>
-    </header>
-    <main class=mdl-layout__content mdl-grid>
-    <div class="mdl-grid">
+  <body>
+  <div class="mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <h1>To-Do</h1>
+      </header>
+  </div>
+    <main>
+    <div class="demo-list-action mdl-list">
       <form id="addToDoForm">
-         <div class="mdl-cell mdl-cell--12-col mdl-cell--middle"><label class= for="newToDoText">New To-Do:</label></div>
-         <div class="mdl-cell mdl-cell--12-col mdl-cell--middle"><input type="text" id="newToDoText"></div>
-         <div class="mdl-cell mdl-cell--8-col mdl-cell--middle"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"><i class="material-icons"></i>+</button></div>
+         <div class="mdl-list__item"><label class= for="newToDoText">New To-Do:</label></div>
+         <div class="mdl-list__item"><input type="text" id="newToDoText"></div>
+         <div class="mdl-list__item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"><i class="material-icons"></i>+</button></div>
       </form>
     </div>
     </main>
