@@ -9,7 +9,7 @@ function onReady() {
    toDos.push({
       title: newToDoText.value,
       complete: false,
-      id: id++;
+      id: id++,
     });
     newToDoText.value = '';
 
@@ -38,7 +38,7 @@ function onReady() {
       deleteButton.addEventListener("click",
       function(event){
 
-        toDoList.filter(toDo.id(id[, toDoList]);
+        toDoList.filter(toDo.id(id[toDoList]));
 
       renderTheUI();
       });
