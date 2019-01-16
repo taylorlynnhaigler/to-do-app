@@ -5,6 +5,8 @@
 body {
   font-size: 18px;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -26,10 +28,30 @@ label {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
   margin-left: 50px;
+  width: 100%;
+}
+li {
+  width: 80%;
+  font-size: 1.2em;
+  margin-top: 40px;
 }
 
+li button {
+  background-color: pink;
+  width: 100px;
+  height: 100%;
+  padding: 4px;
+  margin-left: 150px;
+  border: none;
+}
+li input {
+  margin: 0 auto;
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
 
 input {
   background: none;
@@ -38,13 +60,14 @@ input {
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
-}
 
-button {
-  margin-left: 120px;
-}
-
-.mdl-card {
-  margin: auto;
-  width: 800px;
+#newToDoText {
+  background: none;
+  border: none;
+  border-bottom: black solid .1rem;
+  width: 400px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.1em;
 }
