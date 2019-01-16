@@ -26,7 +26,7 @@ function onReady() {
       const checkbox = document.createElement('input');
       checkbox.type = "checkbox";
       const deleteButton = document.createElement('button');
-      deleteButton.innterHTML='<span>Delete</span>'
+      deleteButton.textContent="Delete";
 
       newLi.textContent = toDo.title;
 
@@ -36,9 +36,9 @@ function onReady() {
 
 
       deleteButton.addEventListener("click",
-      function(event){
-
-        toDoList.filter(toDo.id(id[toDoList]));
+      function(id){
+      let result = toDos.filter(toDo => toDo.id !==id);
+      return result;
 
       renderTheUI();
       });
