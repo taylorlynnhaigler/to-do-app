@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+header {
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+
+input {
+  background: none;
+  border: none;
+  border-bottom: black solid .1rem;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 120px;
+}
+
+.mdl-card {
+  margin: auto;
+  width: 800px;
+}
