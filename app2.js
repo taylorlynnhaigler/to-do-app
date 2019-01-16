@@ -39,7 +39,7 @@ function removeToDo() {
      newLi.appendChild(checkbox);
      newLi.appendChild(deleteButton);
 
-     deleteButton.addEventListener("click", event => {
+     deleteButton.addEventListener("click", () => {
        event.preventDefault();
        toDos = removeToDo(toDo.id);
      });
