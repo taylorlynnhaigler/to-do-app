@@ -39,7 +39,7 @@ function onReady() {
 
     // delete the to-do
     deleteButton.addEventListener('click', event => {
-      newLi.toDoList.removeChild(newLi);
+      newToDoText.toDoList.removeChild(newToDoText);
     });
 
   });
