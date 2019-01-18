@@ -1,6 +1,6 @@
 function onReady() {
   const addToDoForm = document.getElementById('addToDoForm');
-  const newToDoForm = document.getElementById('newToDoText');
+  const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
 
   addToDoForm.addEventListener('submit', () => {
@@ -36,6 +36,11 @@ function onReady() {
 
     // empty the input
     newToDoText.value = '';
+
+    // delete the to-do
+    deleteButton.addEventListener('click', event => {
+      newLi.toDoList.removeChild(newLi);
+    });
 
   });
 }
