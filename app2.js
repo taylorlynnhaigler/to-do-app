@@ -16,7 +16,7 @@ function createNewToDo() {
    renderTheUI();
  }
 
-function removeToDo() {
+function removeToDo(id) {
    return toDos.filter(toDo => toDo.id !==id);
  }
 
@@ -42,6 +42,7 @@ function removeToDo() {
      deleteButton.addEventListener("click", () => {
        event.preventDefault();
        toDos = removeToDo(toDo.id);
+       renderTheUI();
      });
    });
  }
